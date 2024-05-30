@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/name"
+            android:background="@drawable/edit_field_bg"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/age"
+            android:background="@drawable/edit_field_bg"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="number" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etDob"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/date_of_birth"
+            android:background="@drawable/edit_field_bg"
+            android:drawableEnd="@drawable/date_icon"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:focusable="false"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/address"
+            android:background="@drawable/edit_field_bg"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPostalAddress" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_bg"
+            android:text="@string/submit" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="28dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>
